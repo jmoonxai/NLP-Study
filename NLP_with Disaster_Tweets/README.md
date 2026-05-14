@@ -247,9 +247,9 @@ pseudo labeling에서는 단순 확률값뿐 아니라 예측 불확실성을 �
 ---
 
 
-## 8. Lesson Learned
+## 7. Lesson Learned
 
-### 8.1 Validation score improvement does not always mean better generalization
+### 7.1 Validation score improvement does not always mean better generalization
 
 이번 프로젝트에서 가장 크게 배운 점은 validation score와 실제 test generalization 성능이 항상 같은 방향으로 움직이지 않는다는 점이었다.
 
@@ -261,7 +261,7 @@ FGM, label smoothing, pseudo labeling 등 여러 실험에서 validation score�
 
 ---
 
-### 8.2 Model architecture was less important than data interpretation
+### 7.2 Model architecture was less important than data interpretation
 
 초기에는 BERT, RoBERTa, DeBERTa, BERTweet 등 pretrained model 자체를 바꾸는 방향으로 성능 개선을 시도했다.
 
@@ -277,7 +277,7 @@ FGM, label smoothing, pseudo labeling 등 여러 실험에서 validation score�
 
 ---
 
-### 8.3 More advanced techniques do not automatically improve performance
+### 7.3 More advanced techniques do not automatically improve performance
 
 FGM, label smoothing, noisy sample removal, pseudo labeling 등 다양한 성능 개선 기법을 적용했지만, 대부분의 기법은 validation score 상승과 달리 test score 개선으로 이어지지 않았다.
 
@@ -294,7 +294,7 @@ FGM, label smoothing, noisy sample removal, pseudo labeling 등 다양한 성능
 
 ---
 
-### 8.4 Uncertainty estimation matters in pseudo labeling
+### 7.4 Uncertainty estimation matters in pseudo labeling
 
 초기 pseudo labeling은 단순 confidence threshold 기반으로 진행했다.
 
@@ -304,7 +304,7 @@ FGM, label smoothing, noisy sample removal, pseudo labeling 등 다양한 성능
 
 ---
 
-### 8.5 Experiment tracking is essential in iterative NLP research
+### 7.5 Experiment tracking is essential in iterative NLP research
 
 이번 프로젝트에서는 모델, seed, scheduler, fold 수, FGM epsilon, pseudo labeling threshold 등을 지속적으로 기록하며 비교했다.
 
